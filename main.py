@@ -98,29 +98,19 @@ class Graphic:
 
         if Amplitude == 1 and Frequency == 1:
             sinFunction = fr"f(x) = sin(x)"
-        elif Amplitude != 1 and Frequency != 1:
-            sinFunction = fr"f(x) = sin(x*{f})*{a}"
-        elif Frequency != 1:
-            sinFunction = fr"f(x) = sin(x*{f})"
-        elif Amplitude != 1:
-            sinFunction = fr"f(x) = sin(x)*{a}"
-
-        if Amplitude == 1 and Frequency == 1:
+            tanFunction = fr"f(x) = tan(x)"
             cosFunction = fr"f(x) = cos(x)"
         elif Amplitude != 1 and Frequency != 1:
+            sinFunction = fr"f(x) = sin(x*{f})*{a}"
             cosFunction = fr"f(x) = cos(x*{f})*{a}"
-        elif Frequency != 1:
-            cosFunction = fr"f(x) = cos(x*{f})"
-        elif Amplitude != 1:
-            cosFunction = fr"f(x) = cos(x)*{a}"
-
-        if Amplitude == 1 and Frequency == 1:
-            tanFunction = fr"f(x) = tan(x)"
-        elif Amplitude != 1 and Frequency != 1:
             tanFunction = fr"f(x) = tan(x*{f})*{a}"
         elif Frequency != 1:
+            sinFunction = fr"f(x) = sin(x*{f})"
+            cosFunction = fr"f(x) = cos(x*{f})"
             tanFunction = fr"f(x) = tan(x*{f})"
         elif Amplitude != 1:
+            sinFunction = fr"f(x) = sin(x)*{a}"
+            cosFunction = fr"f(x) = cos(x)*{a}"
             tanFunction = fr"f(x) = tan(x)*{a}"
 
         blit = Display.display.blit
